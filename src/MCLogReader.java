@@ -8,7 +8,7 @@ import java.net.URISyntaxException;
 
 public class MCLogReader extends Thread{
 	
-	boolean isRunning = true;
+	boolean isRunning = true;//
 	BufferedInputStream stream = null;
 	
 	public static void main(String[] args) throws FileNotFoundException, URISyntaxException {
