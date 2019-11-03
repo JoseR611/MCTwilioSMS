@@ -72,8 +72,7 @@ public class MCLogReader extends Thread{
 		}else {
 			return;
 		}
-		
-		//SmsSender sms = new SmsSender()
+		//sms.sendMessage(TimeNameDestinationMessage.get(2), TimeNameDestinationMessage.get(3));
 		
 	}
 }
