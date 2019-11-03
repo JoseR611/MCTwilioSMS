@@ -12,15 +12,26 @@ public class MCLogReader extends Thread{
 	
 	//Reads the log file 
 	public void run() {
+		SmsReceiver smsr = new SmsReceiver("AC4b5aa89ca455fcb98a84e8f27ebfada1", "db52572b7b6c77723ba78cdf5161e830");
+		MCMsgReader mcmr = new MCMsgReader();
 		while(isRunning) {
 			String line = "";
 			try {
-				if(stream.available() > 0) {
+				if(stream.available() > 0) {//catches messages from game and send to the real world
 					while(stream.available() > 0) {
 						line = line + (char) stream.read();
 					}
 					if(line.charAt(33) == '*') {
 						parseLog(line);
+					}
+					
+					//catches messages from the real world and send them to Minecraft
+					ArrayList<String> msg = mcmr.parseMessage(smsr.getMessages());
+					//command to write things into commandline
+					
+					for(String tell : msg) {
+						String command = "/say " + tell;
+						//run command prompt
 					}
 					try {
 						sleep(500);
@@ -72,7 +83,8 @@ public class MCLogReader extends Thread{
 		}else {
 			return;
 		}
-		//sms.sendMessage(TimeNameDestinationMessage.get(2), TimeNameDestinationMessage.get(3));
+		SmsSender smsSend = new SmsSender("AC4b5aa89ca455fcb98a84e8f27ebfada1", "db52572b7b6c77723ba78cdf5161e830", "+12019926017");
+		smsSend.sendMessage(TimeNameDestinationMessage.get(2), TimeNameDestinationMessage.get(3));
 		
 	}
 }
