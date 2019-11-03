@@ -1,0 +1,156 @@
+[22:52:22] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[22:52:22] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[22:52:22] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[22:52:22] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[22:52:22] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[22:52:23] [Server thread/INFO]: Starting minecraft server version 1.14.4
+[22:52:23] [Server thread/INFO]: Loading properties
+[22:52:23] [Server thread/INFO]: Default game type: SURVIVAL
+[22:52:23] [Server thread/INFO]: Generating keypair
+[22:52:24] [Server thread/INFO]: Starting Minecraft server on *:25565
+[22:52:24] [Server thread/INFO]: Using default channel type
+[22:52:26] [Server thread/INFO]: Preparing level "world"
+[22:52:26] [Server thread/INFO]: Reloading ResourceManager: Default
+[22:52:55] [Server thread/INFO]: Loaded 6 recipes
+[22:52:56] [Server thread/INFO]: Loaded 811 advancements
+[22:52:56] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[22:52:58] [Server thread/INFO]: Preparing spawn area: 0%
+[22:52:58] [Server thread/INFO]: Preparing spawn area: 0%
+[22:52:58] [Server thread/INFO]: Preparing spawn area: 0%
+[22:52:58] [Server thread/INFO]: Preparing spawn area: 0%
+[22:52:58] [Server thread/INFO]: Preparing spawn area: 0%
+[22:52:58] [Server thread/INFO]: Preparing spawn area: 0%
+[22:53:03] [Server-Worker-2/INFO]: Preparing spawn area: 83%
+[22:53:03] [Server-Worker-2/INFO]: Preparing spawn area: 83%
+[22:53:03] [Server-Worker-2/INFO]: Preparing spawn area: 83%
+[22:53:03] [Server-Worker-2/INFO]: Preparing spawn area: 83%
+[22:53:03] [Server-Worker-2/INFO]: Preparing spawn area: 83%
+[22:53:03] [Server-Worker-2/INFO]: Preparing spawn area: 83%
+[22:53:03] [Server-Worker-2/INFO]: Preparing spawn area: 83%
+[22:53:03] [Server-Worker-2/INFO]: Preparing spawn area: 83%
+[22:53:03] [Server-Worker-2/INFO]: Preparing spawn area: 83%
+[22:53:03] [Server-Worker-2/INFO]: Preparing spawn area: 83%
+[22:53:04] [Server-Worker-2/INFO]: Preparing spawn area: 99%
+[22:53:04] [Server thread/INFO]: Time elapsed: 8029 ms
+[22:53:04] [Server thread/INFO]: Done (38.214s)! For help, type "help"
+[22:54:48] [User Authenticator #1/INFO]: UUID of player Darkbass25 is b9d2d2f0-74d3-4f69-8fe0-5f1e0f5673f8
+[22:54:48] [Server thread/INFO]: Darkbass25[/127.0.0.1:59476] logged in with entity id 371 at (-260.157545460107, 67.24341321608179, 210.51006225024668)
+[22:54:48] [Server thread/INFO]: Darkbass25 joined the game
+[22:54:52] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2046ms or 40 ticks behind
+[22:55:00] [Server thread/INFO]: [Darkbass25: Made Darkbass25 no longer a server operator]
+[22:55:33] [Server thread/INFO]: * Darkbass25 call
+[22:56:14] [Server thread/INFO]: /advancement (grant|revoke)
+[22:56:14] [Server thread/INFO]: /ban <targets> [<reason>]
+[22:56:14] [Server thread/INFO]: /ban-ip <target> [<reason>]
+[22:56:14] [Server thread/INFO]: /banlist [ips|players]
+[22:56:14] [Server thread/INFO]: /bossbar (add|get|list|remove|set)
+[22:56:14] [Server thread/INFO]: /clear [<targets>]
+[22:56:14] [Server thread/INFO]: /clone <begin> <end> <destination> [filtered|masked|replace]
+[22:56:14] [Server thread/INFO]: /data (get|merge|modify|remove)
+[22:56:14] [Server thread/INFO]: /datapack (disable|enable|list)
+[22:56:14] [Server thread/INFO]: /debug (report|start|stop)
+[22:56:14] [Server thread/INFO]: /defaultgamemode (adventure|creative|spectator|survival)
+[22:56:14] [Server thread/INFO]: /deop <targets>
+[22:56:14] [Server thread/INFO]: /difficulty [easy|hard|normal|peaceful]
+[22:56:14] [Server thread/INFO]: /effect (clear|give)
+[22:56:14] [Server thread/INFO]: /enchant <targets> <enchantment> [<level>]
+[22:56:14] [Server thread/INFO]: /execute (align|anchored|as|at|facing|if|in|positioned|rotated|run|store|unless)
+[22:56:14] [Server thread/INFO]: /experience (add|query|set)
+[22:56:14] [Server thread/INFO]: /fill <from> <to> <block> [destroy|hollow|keep|outline|replace]
+[22:56:14] [Server thread/INFO]: /forceload (add|query|remove)
+[22:56:14] [Server thread/INFO]: /function <name>
+[22:56:14] [Server thread/INFO]: /gamemode (adventure|creative|spectator|survival)
+[22:56:14] [Server thread/INFO]: /gamerule (announceAdvancements|commandBlockOutput|disableElytraMovementCheck|disableRaids|doDaylightCycle|doEntityDrops|doFireTick|doLimitedCrafting|doMobLoot|doMobSpawning|doTileDrops|doWeatherCycle|keepInventory|logAdminCommands|maxCommandChainLength|maxEntityCramming|mobGriefing|naturalRegeneration|randomTickSpeed|reducedDebugInfo|sendCommandFeedback|showDeathMessages|spawnRadius|spectatorsGenerateChunks)
+[22:56:14] [Server thread/INFO]: /give <targets> <item> [<count>]
+[22:56:14] [Server thread/INFO]: /help [<command>]
+[22:56:14] [Server thread/INFO]: /kick <targets> [<reason>]
+[22:56:14] [Server thread/INFO]: /kill <targets>
+[22:56:14] [Server thread/INFO]: /list [uuids]
+[22:56:14] [Server thread/INFO]: /locate (Buried_Treasure|Desert_Pyramid|EndCity|Fortress|Igloo|Jungle_Pyramid|Mansion|Mineshaft|Monument|Ocean_Ruin|Pillager_Outpost|Shipwreck|Stronghold|Swamp_Hut|Village)
+[22:56:14] [Server thread/INFO]: /loot (give|insert|replace|spawn)
+[22:56:14] [Server thread/INFO]: /me <action>
+[22:56:14] [Server thread/INFO]: /msg <targets> <message>
+[22:56:14] [Server thread/INFO]: /op <targets>
+[22:56:14] [Server thread/INFO]: /pardon <targets>
+[22:56:14] [Server thread/INFO]: /pardon-ip <target>
+[22:56:14] [Server thread/INFO]: /particle <name> [<pos>]
+[22:56:14] [Server thread/INFO]: /playsound <sound> (ambient|block|hostile|master|music|neutral|player|record|voice|weather)
+[22:56:14] [Server thread/INFO]: /recipe (give|take)
+[22:56:14] [Server thread/INFO]: /reload
+[22:56:14] [Server thread/INFO]: /replaceitem (block|entity)
+[22:56:14] [Server thread/INFO]: /save-all [flush]
+[22:56:14] [Server thread/INFO]: /save-off
+[22:56:14] [Server thread/INFO]: /save-on
+[22:56:14] [Server thread/INFO]: /say <message>
+[22:56:14] [Server thread/INFO]: /schedule function <function> <time>
+[22:56:14] [Server thread/INFO]: /scoreboard (objectives|players)
+[22:56:14] [Server thread/INFO]: /seed
+[22:56:14] [Server thread/INFO]: /setblock <pos> <block> [destroy|keep|replace]
+[22:56:14] [Server thread/INFO]: /setidletimeout <minutes>
+[22:56:14] [Server thread/INFO]: /setworldspawn [<pos>]
+[22:56:14] [Server thread/INFO]: /spawnpoint [<targets>]
+[22:56:14] [Server thread/INFO]: /spreadplayers <center> <spreadDistance> <maxRange> <respectTeams> <targets>
+[22:56:14] [Server thread/INFO]: /stop
+[22:56:14] [Server thread/INFO]: /stopsound <targets> [*|ambient|block|hostile|master|music|neutral|player|record|voice|weather]
+[22:56:14] [Server thread/INFO]: /summon <entity> [<pos>]
+[22:56:14] [Server thread/INFO]: /tag <targets> (add|list|remove)
+[22:56:14] [Server thread/INFO]: /team (add|empty|join|leave|list|modify|remove)
+[22:56:14] [Server thread/INFO]: /teammsg <message>
+[22:56:14] [Server thread/INFO]: /teleport (<destination>|<location>|<targets>)
+[22:56:14] [Server thread/INFO]: /tell -> msg
+[22:56:14] [Server thread/INFO]: /tellraw <targets> <message>
+[22:56:14] [Server thread/INFO]: /time (add|query|set)
+[22:56:14] [Server thread/INFO]: /title <targets> (actionbar|clear|reset|subtitle|times|title)
+[22:56:14] [Server thread/INFO]: /tm -> teammsg
+[22:56:14] [Server thread/INFO]: /tp -> teleport
+[22:56:14] [Server thread/INFO]: /trigger <objective> [add|set]
+[22:56:14] [Server thread/INFO]: /w -> msg
+[22:56:14] [Server thread/INFO]: /weather (clear|rain|thunder)
+[22:56:14] [Server thread/INFO]: /whitelist (add|list|off|on|reload|remove)
+[22:56:14] [Server thread/INFO]: /worldborder (add|center|damage|get|set|warning)
+[22:56:14] [Server thread/INFO]: /xp -> experience
+[22:58:10] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 4480ms or 89 ticks behind
+[22:58:54] [Server thread/INFO]: <Darkbass25> oi
+[23:03:13] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3131ms or 62 ticks behind
+[23:05:40] [Server thread/INFO]: * Darkbass25 oi
+[23:05:59] [Server thread/INFO]: <Darkbass25> *
+[23:06:16] [Server thread/INFO]: <Darkbass25> text
+[23:06:26] [Server thread/INFO]: * Darkbass25 a
+[23:08:04] [Server thread/INFO]: * Darkbass25 call 123456789012
+[23:08:17] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3345ms or 66 ticks behind
+[23:08:23] [Server thread/INFO]: * Darkbass25 text 123456789012 oi what are you doing go to sleep
+[23:13:20] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2867ms or 57 ticks behind
+[23:34:56] [Server thread/INFO]: [Server] oi
+[23:35:09] [Server thread/INFO]: Unknown command
+[23:35:09] [Server thread/INFO]: /me<--[HERE]
+[23:35:15] [Server thread/INFO]: * Server oi
+[23:35:27] [Server thread/INFO]: * Darkbass25 oi
+[23:38:22] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2062ms or 41 ticks behind
+[23:41:04] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2036ms or 40 ticks behind
+[23:41:25] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6027ms or 120 ticks behind
+[23:41:52] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 11838ms or 236 ticks behind
+[23:42:20] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 13423ms or 268 ticks behind
+[23:42:49] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 13722ms or 274 ticks behind
+[23:43:16] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 12170ms or 243 ticks behind
+[23:43:42] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 10794ms or 215 ticks behind
+[23:44:10] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 12881ms or 257 ticks behind
+[23:44:34] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 9398ms or 187 ticks behind
+[23:44:54] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5554ms or 111 ticks behind
+[23:45:20] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 10978ms or 219 ticks behind
+[23:45:41] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5479ms or 109 ticks behind
+[23:46:03] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6918ms or 138 ticks behind
+[23:46:25] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 7154ms or 143 ticks behind
+[23:46:45] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5656ms or 113 ticks behind
+[23:47:07] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6331ms or 126 ticks behind
+[23:47:27] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5438ms or 108 ticks behind
+[23:47:49] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6723ms or 134 ticks behind
+[23:47:59] [Server thread/INFO]: [Server] oi
+[23:48:11] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 7107ms or 142 ticks behind
+[23:48:33] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 7029ms or 140 ticks behind
+[23:48:55] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6590ms or 131 ticks behind
+[23:49:13] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3172ms or 63 ticks behind
+[23:50:05] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2001ms or 40 ticks behind
+[23:50:36] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2002ms or 40 ticks behind
+[23:51:24] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2641ms or 52 ticks behind
+[23:56:27] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2452ms or 49 ticks behind
+[23:58:24] [Server thread/INFO]: [Server] oi

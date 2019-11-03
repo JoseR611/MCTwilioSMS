@@ -13,7 +13,7 @@ public class MCParser {
 //		
 //		MCLogReader reader = new MCLogReader();
 //		reader.parseLog("[12:14:56]");
-//		File path = new File(new URI("file:///Users/jr607/Desktop/1.14.4%20Server/logs/latest.log"));
+//		File path = new File(new URI("file:///Users/jr607/Documents/Github/MCTwilioSMS/1.14.4%20Server/logs/latest.log"));
 //		reader.stream = new BufferedInputStream(new FileInputStream(path));
 //		reader.start();
 		
