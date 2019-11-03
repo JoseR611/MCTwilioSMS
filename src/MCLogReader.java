@@ -1,23 +1,13 @@
 import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
+import java.util.ArrayList;
 
 public class MCLogReader extends Thread{
 	
 	boolean isRunning = true;
 	BufferedInputStream stream = null;
 	
-	public static void main(String[] args) throws FileNotFoundException, URISyntaxException {
-		MCLogReader reader = new MCLogReader();
-		File path = new File(new URI("file:///Users/jr607/Desktop/1.14.4%20Server/logs/latest.log"));
-		reader.stream = new BufferedInputStream(new FileInputStream(path));
-		reader.start();
-	}
-	
+	//Reads the log file 
 	public void run() {
 		while(isRunning) {
 			String line = "";
@@ -26,8 +16,7 @@ public class MCLogReader extends Thread{
 					while(stream.available() > 0) {
 						line = line + (char) stream.read();
 					}
-					System.out.println(line);//print out line by line
-				}else {
+					parseLog(line);
 					try {
 						sleep(500);
 					} catch (InterruptedException ex) {
@@ -38,5 +27,11 @@ public class MCLogReader extends Thread{
 				e.printStackTrace();
 			}
 		}
+	}
+	
+	public void parseLog(String line) {
+		ArrayList<String> TimeNameMessage = new ArrayList<>();
+		TimeNameMessage.add(line.substring(1, 9));
+		System.out.println(TimeNameMessage.get(0));
 	}
 }
