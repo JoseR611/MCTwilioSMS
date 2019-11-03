@@ -39,14 +39,30 @@ public class SmsReceiver {
 		AUTH_TOKEN = auth;
 	}
 	
+	private static String convertDate(DateTime utcDate) {
+		String ampm = "AM";
+		DateTime date = utcDate.withZone(org.joda.time.DateTimeZone.getDefault());
+		String uncon = date.toString();
+		uncon = uncon.substring(11, 16);
+		int hour = Integer.parseInt(uncon.substring(0, 2));
+		if(hour > 11) {
+			ampm = "PM";
+		}
+		if(hour == 0 || hour > 12) {
+			hour -= 12;
+		}
+		if(hour < 0) {
+			hour = hour*-1;
+		}
+		String retval = Integer.toString(hour) + uncon.substring(2) + ampm;
+		return retval;
+	}
+	
 	/**
 	 * Gets all messages from lastMessage to the present and returns them as a String
 	 * @return - String where each line is a separate text message
 	 */
 	public ArrayList<ArrayList<String>> getMessages() {
-		//System.out.println(lastMessage);
-		//get("/", (req, res) -> "Hello Web");
-		//post("/sms", (req, res) -> "");
 		ArrayList<ArrayList<String>> retval = new ArrayList<ArrayList<String>>(10);
 		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 		ResourceSet<Message> messages = Message.reader()
@@ -58,7 +74,7 @@ public class SmsReceiver {
 		for(Message record : messages) {
 			if(record.getStatus() == Message.Status.RECEIVED) {
 				ArrayList<String> entry = new ArrayList<String>(3);
-				entry.add(0, record.getDateSent().toString());
+				entry.add(convertDate(record.getDateSent()));
 				entry.add(1, record.getFrom().toString());
 				entry.add(2, record.getBody());
 				retval.add(entry);
