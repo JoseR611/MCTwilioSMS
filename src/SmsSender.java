@@ -17,15 +17,17 @@ public class SmsSender {
      * Account Authorization token, provided by TwilioController
      */
     public static String AUTH_TOKEN;
+    public static String twNum;
     
     /**
      * Create a new SmsSender object
      * @param account - Account SID token
      * @param auth - Account Authorization token
      */
-    public SmsSender(String account, String auth) {
+    public SmsSender(String account, String auth, String twilioNumber) {
     	ACCOUNT_SID = account;
     	AUTH_TOKEN = auth;
+    	twNum = twilioNumber;
     }
     
     /**
@@ -38,7 +40,7 @@ public class SmsSender {
     	
     	Message message = Message
     			.creator(new PhoneNumber(cellNum), 
-    					new PhoneNumber("+12019926017"), 
+    					new PhoneNumber(twNum), 
     					text)
     			.create();
     	

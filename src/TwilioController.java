@@ -27,10 +27,10 @@ public class TwilioController {
 	 * @param accountSid - Account SID token
 	 * @param authToken - Account Authority Token
 	 */
-	public TwilioController(String accountSid, String authToken) {
+	public TwilioController(String accountSid, String authToken, String twilioNumber) {
 		ACCOUNT_SID = accountSid;
 		AUTH_TOKEN = authToken;
-		sender = new SmsSender(ACCOUNT_SID, AUTH_TOKEN);
+		sender = new SmsSender(ACCOUNT_SID, AUTH_TOKEN, twilioNumber);
 		receiver = new SmsReceiver(ACCOUNT_SID, AUTH_TOKEN);
 	}
 	
