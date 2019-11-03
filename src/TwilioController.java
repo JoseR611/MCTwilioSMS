@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * A class used to combine all the classes dealing with sending and receiving SMS Messages via Twilio
  * @author Aaron
@@ -51,7 +53,7 @@ public class TwilioController {
 	 * Get all text messages since creation of this object or from the last time this function was called
 	 * @return - the text messages, one message per line
 	 */
-	public String getMessages() {
+	public ArrayList<ArrayList<String>> getMessages() {
 		return receiver.getMessages();
 	}
 }
