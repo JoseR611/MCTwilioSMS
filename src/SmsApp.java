@@ -7,8 +7,11 @@ import static spark.Spark.*;
 public class SmsApp {
     public static void main(String[] args) {
         get("/", (req, res) -> "Hello Web");
-
+        
+        
         post("/sms", (req, res) -> {
+        	System.out.print(req);
+        	System.out.print(res);
             res.type("application/xml");
             Body body = new Body
                     .Builder("The Robots are coming! Head for the hills!")
